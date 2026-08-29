@@ -10,3 +10,7 @@ with zipfile.ZipFile("dataset.zip", "r") as zip_ref:
     zip_ref.extractall("data")
 
 print("Finished")
+
+import os
+
+os.remove("dataset.zip") 
